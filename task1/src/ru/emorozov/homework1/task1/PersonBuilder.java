@@ -10,29 +10,37 @@ public class PersonBuilder{
 	private int age;
 	private String gender;
 
-	public void addFirstName(String firstName){
+	public PersonBuilder addFirstName(String firstName){
 		this.firstName = firstName;
+		return this;
 	}
-	public void addLastName(String lastName){
+	public PersonBuilder addLastName(String lastName){
 		this.lastName = lastName;
+		return this;
 	}
-	public void addMiddleName(String middleName){
+	public PersonBuilder addMiddleName(String middleName){
 		this.middleName = middleName;
+		return this;
 	}
-	public void addCountry(String country){
+	public PersonBuilder addCountry(String country){
 		this.country = country;
+		return this;
 	}
-	public void addAddress(String address){
+	public PersonBuilder addAddress(String address){
 		this.address = address;
+		return this;
 	}
-	public void addPhone(String phone){
+	public PersonBuilder addPhone(String phone){
 		this.phone = phone;
+		return this;
 	}
-	public void addAge(int age){
+	public PersonBuilder addAge(int age){
 		this.age = age;
+		return this;
 	}
-	public void addGender(String gender){
+	public PersonBuilder addGender(String gender){
 		this.gender = gender;
+		return this;
 	}
 
 	public Person build() throws Exception{
